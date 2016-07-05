@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRMetaDataView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-S3-exk" userLabel="mian Table View">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gfG-vl-Vqr" userLabel="sub Table View">
+                    <rect key="frame" x="160" y="0.0" width="160" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fdd-S3-exk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1YS-C8-VS2"/>
+                <constraint firstItem="fdd-S3-exk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Do3-fq-ajS"/>
+                <constraint firstItem="gfG-vl-Vqr" firstAttribute="leading" secondItem="fdd-S3-exk" secondAttribute="trailing" id="Fvo-Lo-hYf"/>
+                <constraint firstItem="gfG-vl-Vqr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xmi-wV-XqC"/>
+                <constraint firstAttribute="bottom" secondItem="fdd-S3-exk" secondAttribute="bottom" id="fLA-XM-adG"/>
+                <constraint firstItem="fdd-S3-exk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="fSv-de-KrD"/>
+                <constraint firstAttribute="bottom" secondItem="gfG-vl-Vqr" secondAttribute="bottom" id="jFG-jh-NQC"/>
+                <constraint firstAttribute="trailing" secondItem="gfG-vl-Vqr" secondAttribute="trailing" id="vLM-78-0po"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="mainTableView" destination="fdd-S3-exk" id="4AV-w5-aqK"/>
+                <outlet property="subTableView" destination="gfG-vl-Vqr" id="Il2-W8-FZc"/>
+            </connections>
+            <point key="canvasLocation" x="459" y="305"/>
+        </view>
+    </objects>
+</document>
